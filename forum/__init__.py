@@ -53,7 +53,7 @@ def inject_categories():
     categories = []
     try:
         categories = cached_categories()
-    except e:
+    except Exception as e:
         print(e)
         
     return dict(app_categories=categories)

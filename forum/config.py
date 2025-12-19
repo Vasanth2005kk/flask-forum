@@ -28,3 +28,6 @@ class Config:
     AVATAR_FOLDER = os.path.join(APP_FOLDER, 'public/images/avatars')
 
     DEBUG_TB_INTERCEPT_REDIRECTS = False
+
+config = Config()
+print(config.AVATAR_FOLDER)
